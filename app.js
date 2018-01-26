@@ -20,7 +20,8 @@ var commentRoutes       = require("./routes/comments"),
 //seedDB(); //seed the database
 
 //CONFIG
-mongoose.connect("mongodb://localhost/yelp_camp_v12");
+//mongoose.connect("mongodb://localhost/yelp_camp_v12");
+mongoose.connect("mongodb://Patrick:iamironman@ds155644.mlab.com:55644/yelpcamp_v11deployed");
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(__dirname + "/public")); //__dirname is to always make sure we are in THIS directory to serve public folder
 app.use(methodOverride("_method"));
