@@ -23,10 +23,9 @@ var commentRoutes       = require("./routes/comments"),
 //To help you speed up production, don't manually comment out these lines when working in heroku or your own environment to use the right database
 //just use environment variables and use the "export" command to set DATABASEURL (which can be named anything) to the right database on the environment 
 //you are using.
-//mongoose.connect("mongodb://localhost/yelp_camp_v12");
 //mongoose.connect("mongodb://Patrick:iamironman@ds155644.mlab.com:55644/yelpcamp_v11deployed");
-
-mongoose.connect(process.env.DATABASEURL);
+var url = process.env.DATABASEURL || "mongodb://localhost/yelp_camp_v12";
+mongoose.connect(url);
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(__dirname + "/public")); //__dirname is to always make sure we are in THIS directory to serve public folder
