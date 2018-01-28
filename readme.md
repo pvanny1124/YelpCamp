@@ -9,6 +9,6 @@ The user can edit his/her campground and comments but cannot edit other users ca
 
 The project has been deployed on heroku here: https://stark-hollows-32841.herokuapp.com/campgrounds/5a6ae2bb37233c2f68f50196
 
-This is currently version12 and I will be working on more features, and stylistic upgrades
+This is currently version12 (I have decided to not add previous versions on github because this version felt more complete in terms of functionality). I will be working on more features, and stylistic upgrades
 
 Please view code for more comments!
